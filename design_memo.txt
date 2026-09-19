@@ -1,0 +1,9 @@
+Design Memo
+
+My program uses a linked list to manage a restaurant waitlist. A linked list is made of nodes, and each node stores a customer's name and a pointer to the next node. The Node class creates each customer, while the LinkedList class manages all the customers.
+
+The head is an important part of the list because it points to the first customer. When a new customer is added to the front, the new node becomes the head, and its next pointer points to the previous head. When a customer is added to the end, the program follows the nodes until it reaches the last one. Then, it connects the new node to the end.
+
+The remove method searches for a customer by name. If the customer is found, the program updates the pointers to remove that node. If the customer is not found, the program displays a message. The print_list method starts at the head and displays each customer until there are no more nodes.
+
+A real engineer might need a custom linked list when they need to manage data that changes often. For example, a restaurant could use a linked list to manage customers waiting for a table. Linked lists can make adding or removing items easier in certain situations because the program can update pointers instead of moving many elements. Engineers should choose the data structure based on the needs of their application.
